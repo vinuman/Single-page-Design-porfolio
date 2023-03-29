@@ -1,4 +1,7 @@
-*{
+
+
+
+   *{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -13,7 +16,7 @@ html{
 body{
     background-color: #FFF7F0;
     margin: 4% 10%;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 header{
@@ -277,6 +280,11 @@ footer > img{
 
 @media screen and (max-width:900px){
 
+    body{
+        background-color: #FFF7F0;
+        margin: 4% 10%;
+        overflow-x: hidden !important;
+    }
     
     .title{
         display: flex;
@@ -331,7 +339,7 @@ footer > img{
     
     
     .image-container{
-        top:152rem;
+        top:160 rem;
     }
 
     .book-call{
@@ -361,6 +369,12 @@ footer > img{
 
 
 @media screen and (max-width:640px){
+
+    body{
+        background-color: #FFF7F0;
+        margin: 4% 10%;
+        overflow-x: hidden !important;
+    }
 
     header > img{
         width:4.4rem;
