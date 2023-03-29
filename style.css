@@ -1,7 +1,4 @@
-
-
-
-   *{
+*{
     margin:0;
     padding:0;
     box-sizing: border-box;
@@ -10,13 +7,15 @@
 html{
     font-size: 62.5%;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    position: relative;
+    overflow-x: hidden;
+
 }
 
 body{
     background-color: #FFF7F0;
     margin: 4% 10%;
     overflow-x: hidden !important;
+    position: relative;
 }
 
 header{
@@ -186,6 +185,8 @@ header > img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    width:100%;
+    overflow: hidden;
 }
 
 .my-work > p{
@@ -196,10 +197,11 @@ header > img{
 
 .image-container{
     display: flex;
-    overflow-x:scroll;
     position: absolute;
     top:142rem;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+    width:90%;
+    left: 0;
 }
 
 .image-container > img{
@@ -207,6 +209,8 @@ header > img{
     margin-right: 1rem;
     border-radius: 1rem;
     cursor: pointer;
+    display: flex;
+   
 }
 
 .arrows{
@@ -277,6 +281,10 @@ footer > img{
     transition: all 0.5s ease-in;
 }
 
+.show{
+    display: block;
+}
+
 
 @media screen and (max-width:900px){
 
@@ -339,7 +347,12 @@ footer > img{
     
     
     .image-container{
-        top:160 rem;
+        top:165rem;
+    }
+
+    .image-container > img{
+        width:30rem;
+        height: 18rem;
     }
 
     .book-call{
@@ -494,3 +507,5 @@ footer > img{
     
 }
 
+
+   
