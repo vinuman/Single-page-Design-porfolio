@@ -1,0 +1,482 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    position: relative;
+}
+
+body{
+    background-color: #FFF7F0;
+    margin: 4% 10%;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header > img{
+    border-radius: 1rem;
+}
+
+.btn{
+    width:22.8rem;
+    height: 5.6rem;
+    border-radius: 3rem;
+    border: none;
+    background-color: #030303;
+    color:#FFF7F0;
+    font-weight: bold;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #755CDE !important;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:4rem 0 4rem 0;
+}
+
+.title > h1{
+    color:#030303;
+    font-size: 5.6rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.title > p {
+    color:#7A746E;
+    font-size: 1.8rem;
+    font-weight:lighter;
+    width:60%;
+    text-align: center;
+}
+
+.illustration{
+    border-radius: 1rem;
+    position: relative;
+}
+
+.illustration > img{
+    position: absolute;
+    right: 10%;
+    top:10%
+}
+.illustration > p{
+    position: absolute;
+    left: 10%;
+    bottom:10%;
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+.one{
+    min-height: 36.4rem;
+    background-color: #755CDE;
+    grid-area: one;
+}
+
+.two, .three{
+  min-height: 18.2rem;
+  background-color: #F6A560;
+}
+
+.two{
+    grid-area: two;
+}
+
+.three{
+    background-color: #F39E9E;
+    grid-area: three;
+}
+
+.four, .five, .six{
+    min-height: 18.2rem;
+    background-color: #61C4B7;
+}
+
+.four{
+    grid-area: four;
+}
+
+.five{
+    background-color: #EB7565;
+    grid-area: five;
+}
+
+.six{
+    background-color: #552049;
+    grid-area: six;
+}
+
+.illustrations-content{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas:
+    "one one two three four four"
+    "one one five five six six";
+    grid-gap: 2rem;
+}
+
+.profile{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details{
+    text-align:left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.details > h2{
+    font-size: 4rem;
+    color: #030303;
+    width:75%;
+    padding-bottom: 3rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.details > p{
+    font-size: 1.8rem;
+    color: #7A746E;
+    width:75%;
+    padding-bottom: 3rem;
+}
+
+.details > .btn-2{
+  margin-left: 16rem;
+  align-self: flex-start;
+}
+
+.btn-2{
+  background-color: #EB7565;
+  cursor: pointer;
+  
+}
+
+.btn-2:hover{
+  background-color: #F6A560;
+}
+
+.my-work{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-work > p{
+    font-size: 3.2rem;
+    padding-bottom: 4rem;
+    font-weight: bold;
+}
+
+.image-container{
+    display: flex;
+    overflow-x:scroll;
+    position: absolute;
+    top:142rem;
+    transition: transform 0.3s ease;
+}
+
+.image-container > img{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.arrows{
+    margin-top: 37rem;
+    z-index: 100;
+    width:10rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrows > img{
+    background-color: #030303;
+    border-radius: 50%;
+    padding: 1.5rem;
+    cursor: pointer;
+}
+
+.arrows > img:hover{
+    background-color: #755CDE;
+}
+
+.book-call{
+  margin-top: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #030303;
+  padding:6rem;
+  border-radius: 1rem;
+}
+
+.book-call > button{
+    width: 42rem !important;
+}
+
+.call-details > h3{
+    font-size: 4rem;
+    width:50%;
+    color: #FFF7F0;
+    padding-bottom: 2rem;
+}
+.call-details > p{
+    font-size: 1.8rem;
+    color: #FFF7F0;
+    width:70%;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+footer > img{
+    border-radius: 1rem;
+}
+
+/* JS CSS */
+
+.left{
+    left: 0;
+    transition: all 0.5s ease-in;
+}
+
+.right{
+    right: 0;
+    transition: all 0.5s ease-in;
+}
+
+
+@media screen and (max-width:900px){
+
+    
+    .title{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding:4rem 0 4rem 0;
+    }
+    
+    .title > h1{
+        font-size: 4.4rem;
+    }
+    .title > p {
+        width:90%;
+    }
+    
+    .illustrations-content{
+        grid-template-areas:
+       "one one two three"
+       "one one four four"
+       "five five six six";
+    }
+    .profile{
+        justify-content: space-around;
+    }
+
+    .profile > img{
+        width:36.4rem;
+        height: 36.4rem;
+        margin-left: -8rem;
+    }
+    
+    .details{
+        align-items: center;
+    }
+    
+    .details > h2{
+        width:85%;
+        padding-bottom: 2rem;
+        letter-spacing: 0rem;
+    }
+    
+    .details > p{
+        width:100%;
+        margin-left: 4rem;
+    }
+    
+    .details > .btn-2{
+      margin-left: 2rem;
+      align-self: flex-start;
+    }
+    
+    
+    .image-container{
+        top:152rem;
+    }
+
+    .book-call{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width:100%;
+      }
+      
+      .book-call > button{
+          width: 22rem !important;
+      }
+      
+      .call-details > h3{
+          font-size: 3.2rem;
+          width:100%;
+          padding-bottom: 2rem;
+          text-align: center;
+      }
+      .call-details > p{
+          width:100%;
+          padding-bottom: 2rem;
+          text-align: center;
+      }
+    
+}
+
+
+@media screen and (max-width:640px){
+
+    header > img{
+        width:4.4rem;
+        height: 4.4rem;
+    }
+    .btn{
+        width:17.6rem;
+        height: 4.4rem;
+    }
+    
+    
+    .title{
+        padding:4rem 0 2rem 0;
+    }
+    
+    .title > h1{
+        font-size: 3.6rem;
+    }
+    .title > p {
+        font-size: 1.6rem;
+        width:100%;
+    }
+    
+    .illustrations-content{
+        grid-template-areas:
+        "one one"
+        "one one"
+        "two three"
+        "four four"
+        "five five"
+        "six six";
+        grid-gap: 2rem;
+    }
+    .profile{
+        margin-top: 6rem;
+        flex-direction: column;
+    }
+
+    .profile > img{
+        width:30rem;
+        height: 30rem;
+        margin:0;
+    }
+    
+    
+    .details{
+        text-align:center;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    
+    .details > h2{
+        font-size: 2.6rem;
+        width:100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        letter-spacing: 0rem;
+    }
+    
+    .details > p{
+        font-size: 1.6rem;
+        width:100%;
+        padding-bottom: 2rem;
+    }
+    
+    .details > .btn-2{
+      margin: 0;
+      align-self: center;
+    }
+    
+    .my-work{
+        margin-top: 8rem;
+    }
+    
+    .my-work > p{
+        font-size: 2.4rem;
+    }
+    
+    .image-container{
+        top:228rem;
+    }
+    
+    .image-container > img{
+        width:27rem;
+        height: 18rem;
+    }
+    
+    .arrows{
+        margin-top: 20rem;
+    }
+    
+    
+    .book-call{
+      width:100%;
+     padding: 2rem 1rem 2rem 1rem;
+    }
+    
+    .book-call > button{
+        width: 17rem !important;
+        height: 4.4rem !important;
+    }
+    
+    .call-details > h3{
+        font-size: 2.6rem;
+        width:100%;
+
+    }
+    .call-details > p{
+        font-size: 1.6rem;
+        width:100%;
+    }
+
+    footer > img{
+        width:4.4rem;
+        height: 4.4rem;
+    }
+    
+}
+
